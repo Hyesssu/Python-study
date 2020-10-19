@@ -1,0 +1,147 @@
+
+#과제1
+
+print("환영합니다.")
+print("파이썬의 세계에 오신 것을 환영합니다.")
+print("파이썬은 강력합니다.")
+
+
+#과제2
+
+import turtle
+
+turtle.shape("turtle")
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.right(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+
+turtle.done()
+
+
+#과제3
+
+import turtle
+turtle.shape("turtle")
+turtle.forward(100)
+
+turtle.up()
+turtle.goto(0,100)
+turtle.down()
+turtle.forward(100)
+turtle.done()
+
+
+
+#과제4
+
+
+place = str(input("경기장은 어디입니까?"))
+win_team = str(input("이긴 팀은 어디입니까?"))
+lose_team = str(input("진 팀은 어디입니까?"))
+vip = str(input("우수선수는 누구입니까?"))
+score = str(input("스코어는 몇대몇 입니까?"))
+print("="*20)
+print("오늘", place, "에서 야구경기가 열렸습니다.")
+print(win_team,"과",lose_team,"은 치열한 공방전을 펼쳤습니다.")
+print(vip,"이 맹활약을 하였습니다.")
+print("결국", win_team,"이(가)",lose_team,"을(를)",score,"로 이겼습니다.")
+
+print("-"*20)
+
+
+#과제5
+
+
+Num_1 = int(input("첫 번째 숫자를 입력하시오 : "))
+Num_2 = int(input("두 번째 숫자를 입력하시오 : "))
+Num_3 = int(input("세 번째 숫자를 입력하시오 : "))
+print(Num_1, Num_2, Num_3, "의 평균은", (Num_1+Num_2+Num_3)/3,"입니다.")
+
+
+#과제6
+
+import turtle
+turtle.shape("turtle")
+turtle.goto(0,0)
+radius = 50
+turtle.circle(radius)
+turtle.up()
+turtle.goto(100,0)
+turtle.down()
+radius+=20
+turtle.circle(radius)
+turtle.up()
+turtle.goto(200,0)
+turtle.down()
+radius+=20
+turtle.circle(radius)
+turtle.done()
+
+
+#과제7
+
+americano = 2000
+cafelatte = 3000
+cappucchino = 3500
+
+total_1 = int(input("아메리카노 판매 개수 :"))
+total_2 = int(input("카페라떼 판매 개수 :"))
+total_3 = int(input("카푸치노 판매 개수 :"))
+sum_1 = total_1*americano
+sum_2 = total_2*cafelatte
+sum_3 = total_3*cappucchino
+print("총 매출은", sum_1+sum_2+sum_3,"입니다.")
+
+
+#과제8
+
+x = int(input("x :"))
+y = int(input("y :"))
+print("두 수의 합 : ", x+y)
+print("두 수의 차 : ", x-y)
+print("두 수의 곱 : ", x*y)
+print("두 수의 평균 : ", (x+y)/2)
+print("큰 수 :", max(x,y))
+print("작은 수 : ", min(x,y))
+
+
+#과제9
+
+R = int(input("4자리 정수를 입력하시오 : "))
+
+total = R//10**3
+R = R%10**3 
+
+total += R//10**2 
+R = R%10**2
+
+total += R//10
+R = R%10
+
+total += R
+
+print("자리 수의 합 : ", total)
+
+
+#과제 10
+
+import turtle
+turtle.shape("turtle")
+name = str(turtle.textinput("이름을 입력하세요","여기에 입력"))
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.left(90)
+turtle.forward(100)
+turtle.write("안녕하세요?"+ str(name)+ "씨 반갑습니다.")
+turtle.done()
+
